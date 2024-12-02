@@ -1,0 +1,32 @@
+.text-field{
+    -fx-border-radius: 64px;
+    -fx-background-radius: 64px;
+    -fx-background-color: white;
+    -fx-border-width: 2px;
+    -fx-border-color: #272635;
+    -fx-text-fill: #272635;
+}
+.cadastrar{
+    -fx-background-color: white;
+    -fx-text-fill: #272635;
+}
+
+.button{
+    -fx-border-radius: 32px;
+    -fx-background-radius: 32px;
+    -fx-background-color: #272635;
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-border-radius: 32px;
+    -fx-background-radius: 32px;
+    -fx-border-width: 2px;
+    -fx-border-color: #272635;
+    -fx-background-color: white;
+    -fx-text-fill: #272635;
+}
+
+.fundo{
+    -fx-background-color: #E5E7E6;
+}
+
