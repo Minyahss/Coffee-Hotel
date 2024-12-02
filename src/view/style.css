@@ -30,3 +30,18 @@
     -fx-background-color: #E5E7E6;
 }
 
+.date-picker{
+    -fx-border-radius: 64px;
+    -fx-background-radius: 64px;
+    -fx-background-color: white;
+    -fx-border-width: 2px;
+    -fx-border-color: #272635;
+    -fx-text-fill: #272635;
+}
+.date-picker-popup {
+    -fx-background-color: #ffffff; /* Fundo do popup */
+    -fx-border-color: #87ceeb;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
