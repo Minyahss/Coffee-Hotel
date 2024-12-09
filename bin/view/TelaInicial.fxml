@@ -7,26 +7,26 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="fundo" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="fundo" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaInicialController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="fundo" stylesheets="@style.css" BorderPane.alignment="CENTER">
          <children>
-            <TextField layoutX="200.0" layoutY="14.0" prefHeight="40.0" prefWidth="400.0" promptText="Usuário" stylesheets="@style.css">
+            <TextField fx:id="idUsuario" layoutX="200.0" layoutY="14.0" prefHeight="40.0" prefWidth="400.0" promptText="Usuário" stylesheets="@style.css">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <TextField layoutX="200.0" layoutY="79.0" prefHeight="40.0" prefWidth="400.0" promptText="Senha">
+            <TextField fx:id="idSenhaFunc" layoutX="200.0" layoutY="79.0" prefHeight="40.0" prefWidth="400.0" promptText="Senha">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Button layoutX="200.0" layoutY="178.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="400.0" stylesheets="@style.css" text="Entrar">
+            <Button fx:id="idLogin" layoutX="200.0" layoutY="178.0" mnemonicParsing="false" onAction="#idLoginA" prefHeight="50.0" prefWidth="400.0" stylesheets="@style.css" text="Entrar">
                <font>
                   <Font name="Arial Rounded MT Bold" size="24.0" />
                </font>
             </Button>
-            <Button layoutX="200.0" layoutY="253.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="400.0" styleClass="cadastrar" stylesheets="@style.css" text="Cadastrar-se">
+            <Button fx:id="idCadButton" layoutX="200.0" layoutY="253.0" mnemonicParsing="false" onAction="#idCadButtonA" prefHeight="50.0" prefWidth="400.0" styleClass="cadastrar" stylesheets="@style.css" text="Cadastrar-se">
                <font>
                   <Font name="Arial Rounded MT Bold" size="24.0" />
                </font>

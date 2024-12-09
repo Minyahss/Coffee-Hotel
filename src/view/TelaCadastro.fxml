@@ -8,32 +8,32 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="fundo" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="fundo" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CadastroController">
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField layoutX="217.0" layoutY="38.0" prefHeight="40.0" prefWidth="240.0">
+            <TextField fx:id="idNomeCom" layoutX="217.0" layoutY="38.0" prefHeight="40.0" prefWidth="240.0">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
-            <TextField layoutX="14.0" layoutY="117.0" prefHeight="40.0" prefWidth="444.0" promptText="ex: example@gmail.com">
+            <TextField fx:id="idEmailFunc" layoutX="14.0" layoutY="117.0" prefHeight="40.0" prefWidth="444.0" promptText="ex: example@gmail.com">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
-            <TextField layoutX="14.0" layoutY="189.0" prefHeight="40.0" prefWidth="444.0" promptText="ex: 123.456.789-00">
+            <TextField fx:id="idCPFFunc" layoutX="14.0" layoutY="189.0" prefHeight="40.0" prefWidth="444.0" promptText="ex: 123.456.789-00">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
-            <TextField layoutX="14.0" layoutY="271.0" prefHeight="40.0" prefWidth="444.0">
+            <TextField fx:id="idSenhaFunc" layoutX="14.0" layoutY="271.0" prefHeight="40.0" prefWidth="444.0">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
-            <DatePicker layoutX="503.0" layoutY="37.0" prefHeight="43.0" prefWidth="255.0" promptText="Data de Nascimento" styleClass="date-picker-popup" />
-            <TextField layoutX="14.0" layoutY="38.0" prefHeight="40.0" prefWidth="200.0">
+            <DatePicker fx:id="idDataFunc" layoutX="503.0" layoutY="37.0" onAction="#DataFunc" prefHeight="43.0" prefWidth="255.0" promptText="Data de Nascimento" styleClass="date-picker-popup" />
+            <TextField fx:id="idNomeUs" layoutX="14.0" layoutY="38.0" prefHeight="40.0" prefWidth="200.0">
                <font>
                   <Font size="14.0" />
                </font>
@@ -63,12 +63,12 @@
                   <Font name="ArtifaktElement-Black" size="18.0" />
                </font>
             </Label>
-            <Button layoutX="273.0" layoutY="341.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="255.0" text="Cadastrar-se">
+            <Button fx:id="idCadastrarFunc" layoutX="273.0" layoutY="341.0" mnemonicParsing="false" onAction="#CadastrarFunc" prefHeight="55.0" prefWidth="255.0" text="Cadastrar-se">
                <font>
                   <Font name="ArtifaktElement-Book" size="24.0" />
                </font>
             </Button>
-            <TextField layoutX="511.0" layoutY="151.0" prefHeight="40.0" prefWidth="240.0">
+            <TextField fx:id="idTelFunc" layoutX="511.0" layoutY="151.0" prefHeight="40.0" prefWidth="240.0">
                <font>
                   <Font size="14.0" />
                </font>
